@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="library"></div>
+    <button class="addBtn">New Book</button>
+    <div class="pop-add-book hidden">
+      <form action="#">
+        <input type="text" name="title" id="title" placeholder="Book Title..." autocomplete="off">
+        <input type="text" name="author" id="author" placeholder="Book Author..." autocomplete="off">
+        <input type="number" name="pages" id="pages" placeholder="Number of Pages..." autocomplete="off">
+        <div class="check-read">
+          <label for="read">Have you read it?</label><br>
+          <div>
+            <input type="radio" name="read" id="readYes">
+            <label for="readYes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="read" id="readNot">
+            <label for="readNot">No</label>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Add Book</button>
+        <button class="cancel-btn">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
