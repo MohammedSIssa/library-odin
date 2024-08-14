@@ -17,9 +17,6 @@ function Book(title, author, pages, read) {
   this.getInfo = () => {
     return this.title + ' by ' + this.author + ' ' + this.pages + ' pages ' + (this.read ? "Finished" : "Not Finished")
   }
-  this.setRead = (c) => {
-    this.read = c
-  }
 }
 
 function addBookToLibrary(bookTitle, bookAuthor, bookPages, bookRead) {
